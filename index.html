@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Times Search</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- NewYork App logic -->
+	<script src="assets/javascript/app.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1><strong>New York Times Search</strong></h1>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><span class="glyphicon glyphicon-list-alt"></span> Search Parameters</div>
+			<div class="panel-body">
+				<label>Search Term:</label><br>
+				<input type="text" id="search"><br>
+				<label>Number of Records to Retrieve:</label><br>
+				<div class='input-group' id="records">
+					<select class='form-control' id='dropDownSearch'>
+						<option>1</option>
+						<option>5</option>
+						<option>10</option>
+					</select>
+				</div>
+				<label>Start Year (Optional):</label><br>
+				<input type="text" id="startyear"><br>
+				<label>End Year (Optional):</label><br>
+				<input type="text" id="endyear"><br><br>
+				<button type="button" class = "btn btn-primary" id="searchButton">
+				<span class="glyphicon glyphicon-search"></span> Search
+				</button>
+				<button type="button" class = "btn btn-primary" id="clearResult">
+				<span class="glyphicon glyphicon-trash"></span> Clear Result
+				</button>
+				
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><span class="glyphicon glyphicon-list-alt"></span> Top Results</div>
+			<div class="panel-body" id ="topResults">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
